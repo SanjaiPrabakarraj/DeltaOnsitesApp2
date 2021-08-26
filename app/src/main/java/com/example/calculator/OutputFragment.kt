@@ -29,14 +29,14 @@ class OutputFragment : Fragment() {
 
     fun updateInputText(input:String){
         binding.inputView.text = input
-        binding.resultView.text = ""
+        //binding.outputView.text = ""
     }
     fun updateOutputText(output:String){
-        binding.resultView.text = output
-        binding.inputView.text = ""
+        binding.outputView.text = output
+        //binding.inputView.text = ""
     }
     fun clearTexts(){
-        binding.resultView.text = ""
+        binding.outputView.text = ""
         binding.inputView.text = ""
     }
 

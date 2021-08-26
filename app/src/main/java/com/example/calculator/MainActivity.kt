@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity(), InputFragment.inputFragmentListener{
         outputFragment.updateInputText(input)
     }
 
-    override fun onOutputSent(output: String) {
+    override fun onOutputSent(input:String, output: String) {
         outputFragment.updateOutputText(output)
+        outputFragment.updateInputText(input)
     }
 }
